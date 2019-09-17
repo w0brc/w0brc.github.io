@@ -4,7 +4,30 @@ layout: default
 
 <div class="header-container jumbotron">
     <div class="container">
-        <h1>Boonville Amateur Radio Club</h1>
-        <p>Welcome to the website of the Boonville Amateur Radio Club!</p>
+        <h1>W0BRC Boonville Amateur Radio Club</h1>
+        <p>The official website of the W0BRC Boonville Amateur Radio Club</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10">
+            <h2 class="page-heading">Recent posts:</h2>
+            <ul class="post-list">
+            {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h3>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h3>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-xs-2">
+            <center>
+                <a href="http://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarn0nbh.php?image=random"></a>
+            </center>
+        </div>
     </div>
 </div>
