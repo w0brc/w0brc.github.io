@@ -1,5 +1,5 @@
 # Site settings
-title: Boonville Amateur Radio Club
+title: W0BRC Boonville Amateur Radio Club
 email: kc0elb@pm.me
 description: >
         The official website of the W0BRC Boonville Amateur Radio Club
@@ -14,7 +14,7 @@ git_edit_address: https://github.com/w0brc/w0brc.github.io/blob/master
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: slate
+bootwatch: united
 
 # Build settings
 markdown: kramdown
