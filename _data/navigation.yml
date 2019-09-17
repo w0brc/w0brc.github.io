@@ -1,9 +1,9 @@
-- title: Swap Meet
-  url: /swapmeet.html
+- title: Swap Meets
+  url: /swapmeets.html
   sublinks:
     - title: 2019
-      url: /swapmeet/2019.html
+      url: /swapmeets/2019.html
     - title: 2018
-      url: /swapmeet/2018.html
+      url: /swapmeets/2018.html
 - title: About
   url: /about.html
