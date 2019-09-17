@@ -2,11 +2,11 @@
     <div class="container navbar-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/">
                 <span><img src="{{site.baseurl}}/img/favicon/ms-icon-310x310.png" alt="Logo"></span> {{ site.title }}
             </a>
@@ -14,31 +14,31 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Posts</a></li>
-		{% assign links = site.data.navigation %}
+	        	{% assign links = site.data.navigation %}
                 {% for link in links %}
                     {% assign class = nil %}
                     {% if page.url contains link.url %}
                         {% assign class = 'active' %}
                     {% endif %}
                 {% if link.sublinks %}
-                    <li class="dropdown {{ class }}">
-                        <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            {% for sublink in link.sublinks %}
-                                {% if sublink.title == 'separator' %}
-                                    <li role="separator" class="divider"></li>
-                                {% else %}
-                                    <li>
-                                        <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                    </li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </li>
+                <li class="dropdown {{ class }}">
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    {% for sublink in link.sublinks %}
+                        {% if sublink.title == 'separator' %}
+                        <li role="separator" class="divider"></li>
+                        {% else %}
+                        <li>
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </li>
                 {% else %}
-                    <li class="{{ class }}">
-                        <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                    </li>
+                <li class="{{ class }}">
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
                 {% endif %}
             {% endfor %}
             </ul>
