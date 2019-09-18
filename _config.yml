@@ -7,7 +7,7 @@ description: >
 lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://w0brc.github.io # the base hostname & protocol for your site
+url: https://w0brc.org # the base hostname & protocol for your site
 facebook_address: https://www.facebook.com/BoonvilleAmateurRadioClub
 git_address: https://github.com/w0brc/w0brc.github.io
 git_edit_address: https://github.com/w0brc/w0brc.github.io/blob/master

@@ -1,6 +1,6 @@
 # w0brc.github.io
 
-Please visit the [W0BRC Boonville Amateur Radio Club website](https://w0brc.github.io).
+Please visit the [W0BRC Boonville Amateur Radio Club website](https://w0brc.org).
 
 ## Running locally
 
