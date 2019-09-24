@@ -1,5 +1,4 @@
 - title: Swap Meets
-  url: /swapmeets.html
   sublinks:
     - title: 2020
       url: /swapmeets/2020.html
@@ -7,5 +6,7 @@
       url: /swapmeets/2019.html
     - title: 2018
       url: /swapmeets/2018.html
-- title: About
-  url: /about.html
+- title: About Us
+  sublinks:
+      - title: Club Meetings
+        url: /about/meetings.html
