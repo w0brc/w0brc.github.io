@@ -8,5 +8,7 @@
       url: /swapmeets/2018.html
 - title: About Us
   sublinks:
+      - title: Repeater and 2-Meter Nets
+        url: /about/repeaternet.html
       - title: Club Meetings
         url: /about/meetings.html
