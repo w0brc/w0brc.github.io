@@ -29,7 +29,12 @@
                         <li role="separator" class="divider"></li>
                         {% else %}
                         <li>
-                            <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                            {% if sublink.url contains '://' %}
+                            <a href="{{ sublink.url }}">
+                            {% else %}
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">
+                            {% endif %}
+                            {{ sublink.title }}</a>
                         </li>
                         {% endif %}
                     {% endfor %}

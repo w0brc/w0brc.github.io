@@ -6,6 +6,14 @@
       url: /swapmeets/2019.html
     - title: 2018
       url: /swapmeets/2018.html
+- title: Resources
+  sublinks:
+    - title: Missouri Repeater Council
+      url: http://database.missourirepeater.org/MissouriRepeater/database/default.aspx
+    - title: Missouri State ARES
+      url: https://ares-mo.org
+    - title: ARRL Band Plan
+      url: http://www.arrl.org/band-plan
 - title: About Us
   sublinks:
       - title: Repeater and 2-Meter Nets
