@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1>Local Nets</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-left">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col">Net Name</th>
+                        <th scope="col">Frequency</th>
+                        <th scope="col">Offset</th>
+                        <th scope="col">PL Tone</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Day</th>
+                        <th scope="col">Callsign/Operator</th>
+                        <th scope="col">Notes</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for net in site.data.nets %}
+                    <tr class="table-active">
+                        <th scope="row">{{ net.location }}</th>
+                        <td>{{ net.name }}</td>
+                        <td>{{ net.frequency }}</td>
+                        <td>{{ net.offset }}</td>
+                        <td>{{ net.tone }}</td>
+                        <td>{{ net.time }}</td>
+                        <td>{{ net.day }}</td>
+                        <td>{{ net.callsign }}</td>
+                        <td>{{ net.notes }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

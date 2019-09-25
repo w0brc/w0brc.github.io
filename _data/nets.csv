@@ -1,0 +1,12 @@
+location,name,frequency,offset,tone,time,day,callsign,notes
+Columbia,Columbia Area Simplex Net,146.440,,,8:00:00 PM,SUN,AB0SE,Simplex
+Sedalia,SPARK Repeater Net,147.030,-,179.9,8:00:00 PM,SUN,WA0SDO,
+Warrensburg,,146.880,-,107.2,8:30:00 PM,SUN,W0AU,
+Mexico,,147.255,+,127.3,8:00:00 PM,TUE,AA0RC,
+Howard County,Howard County ARES,146.505,,,7:45:00 PM,WED,WD6BGN,Simplex
+Jefferson City,,147.000,-,127.3,8:00:00 PM,WED,K0ETY,
+Macon,,146.805,-,156.7,8:30:00 PM,WED,N0PR,
+Fulton,,147.315,+,,8:45:00 PM,WED,KC0MV,Can also use a negative (-) offset west of Fulton.
+Columbia,,146.760,-,127.3,9:00:00 PM,WED,K0SI,
+Moberly,,147.090,+,127.3,8:00:00 PM,THURS,K0MOB,No nets 3rd Thursday of month due to club meeting.
+Boonville,Boonville Amateur Radio Club 2-Meter Net,147.360,+,127.3,8:30:00 PM,THURS,W0BRC,

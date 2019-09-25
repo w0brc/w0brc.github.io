@@ -8,6 +8,8 @@
       url: /swapmeets/2018.html
 - title: Resources
   sublinks:
+    - title: Local Nets
+      url: /resources/localnets.html
     - title: Missouri Repeater Council
       url: http://database.missourirepeater.org/MissouriRepeater/database/default.aspx
     - title: Missouri State ARES

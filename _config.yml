@@ -5,7 +5,7 @@ description: >
         The official website of the W0BRC Boonville Amateur Radio Club
         located in Boonville, MO. Join us on our weekly Thursday
         night nets at 8:30 PM on the W0BRC club repeater:
-        147.360 MHz (+) no tone required.
+        147.360 MHz (+) with a PL tone of 127.3.
 lang: en-US
 
 baseurl: "" # the subpath of your site, e.g. /blog/
