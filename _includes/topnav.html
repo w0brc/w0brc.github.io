@@ -30,7 +30,7 @@
                         {% else %}
                         <li>
                             {% if sublink.url contains '://' %}
-                            <a href="{{ sublink.url }}">
+                            <a target="_blank" href="{{ sublink.url }}">
                             {% else %}
                             <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">
                             {% endif %}
