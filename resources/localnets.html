@@ -9,34 +9,59 @@ layout: default
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 text-left">
-            <table class="table table-hover">
-                <thead>
+        <div id="no-more-tables">
+            <table class="col-sm-12 table-bordered table-striped table-condensed cf">
+        		<thead class="cf">
                     <tr>
-                        <th scope="col">Location</th>
-                        <th scope="col">Net Name</th>
-                        <th scope="col">Frequency</th>
-                        <th scope="col">Offset</th>
-                        <th scope="col">PL Tone</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Day</th>
-                        <th scope="col">Callsign/Operator</th>
-                        <th scope="col">Notes</th>
+                        <th>Location</th>
+                        <th>Net Name</th>
+                        <th>Frequency</th>
+                        <th>Offset</th>
+                        <th>Tone</th>
+                        <th>Time</th>
+                        <th>Day</th>
+                        <th>Callsign/Operator</th>
+                        <th>Notes</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     {% for net in site.data.nets %}
-                    <tr class="table-active">
-                        <th scope="row">{{ net.location }}</th>
-                        <td>{{ net.name }}</td>
-                        <td>{{ net.frequency }}</td>
-                        <td>{{ net.offset }}</td>
-                        <td>{{ net.tone }}</td>
-                        <td>{{ net.time }}</td>
-                        <td>{{ net.day }}</td>
-                        <td>{{ net.callsign }}</td>
-                        <td>{{ net.notes }}</td>
+                    <tr>
+                        <td data-title="Location">{{ net.location }}</th>
+                        <td data-title="Net Name">
+                            {% if net.name == null %}
+                            &nbsp;
+                            {% else %}
+                            {{ net.name }}
+                            {% endif %}
+                        </td>
+                        <td data-title="Frequency">{{ net.frequency }}</td>
+                        <td data-title="Offset">
+                            {% if net.offset == null %}
+                            &nbsp;
+                            {% else %}
+                            {{ net.offset }}
+                            {% endif %}
+                        </td>
+                        <td data-title="Tone">
+                            {% if net.tone == null %}
+                            &nbsp;
+                            {% else %}
+                            {{ net.tone }}
+                            {% endif %}
+                        </td>
+                        <td data-title="Time">{{ net.time }}</td>
+                        <td data-title="Day">{{ net.day }}</td>
+                        <td data-title="Callsign/Operator">{{ net.callsign }}</td>
+                        <td data-title="Notes">
+                            {% if net.notes == null %}
+                            &nbsp;
+                            {% else %}
+                            {{ net.notes }}
+                            {% endif %}
+
+                        </td>
                     </tr>
                     {% endfor %}
                 </tbody>
