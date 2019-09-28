@@ -16,6 +16,10 @@
       url: https://ares-mo.org
     - title: ARRL Band Plan
       url: http://www.arrl.org/band-plan
+    - title: Current VHF Propagation Map
+      url: http://aprs.mennolink.org
+    - title: DXMAPS - QSO/SWL Real Time Information
+      url: https://www.dxmaps.com
 - title: About Us
   sublinks:
       - title: Repeater and 2-Meter Nets
