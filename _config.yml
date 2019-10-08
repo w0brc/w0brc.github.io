@@ -11,6 +11,9 @@ facebook_address: https://www.facebook.com/BoonvilleAmateurRadioClub
 git_address: https://github.com/w0brc
 git_edit_address: https://github.com/w0brc/club-website/blob/gh-pages
 
+# Google Analytics
+google_analytics: UA-149570219-1
+
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
 bootwatch: united
