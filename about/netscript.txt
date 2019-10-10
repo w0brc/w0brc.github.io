@@ -1,0 +1,28 @@
+*** This is a suggested script, covering the necessary items, but if you wish to tailor it to your needs, feel free. ***
+
+This is _______. I am tonight’s NCS (Net control station) for the Boonville Amateur Radio Club 2 meter net. This Net is held weekly on Thursdays at 8:30PM right here on the W0BRC Boonville Amateur Radio Club repeater.
+
+The purpose of this Net is to:
+
+    1) maintain a crew of trained amateur radio operators to provide emergency and backup communications when and where needed, as well as 
+
+    2) provide a place for announcements and items of interest to local ham radio operators and listeners. 
+
+This is a directed net, however, this net may be interrupted at any time for emergency traffic. If there is any emergency or priority traffic at this time, please list your traffic now.  <PAUSE>
+
+*** (Announcements such as club meetings, testing, etc.) ***
+
+If anyone has any (other) announcements for the net, please share them when you check in.  When you check in, please give your call sign, your name and location, and let us know if you are an ARES member.
+
+I will now ask for any short-time check-ins.  Please call _______.  (Or please come now)
+
+Now all regular check-ins are invited to check in.  Please call _______. (Or please come now)
+
+*** (Call for additional check-ins a time or two after reaching the end of the list) ***
+
+If we have any late, missed or additional check-ins, please come now.
+
+Thank you everyone for checking in tonight.  This is _______ closing this session of the Boonville Amateur Radio Club net and returning the repeater back to normal amateur radio use.  Good night all.
+
+*** (If the CTCSS tone is activated on the repeater, the following announcement may be good idea) 
+NOTE: Either a 127.3 Hz CTCSS tone, or 325 DTMF sequential tones are currently required to access the repeater.  The 127.3 Hz tone is also being transmitted by the repeater, so if you wish to hear ONLY the Boonville repeater on this frequency, you can set the CTCSS (PL) decode on your radio’s receiver to 127.3.***
