@@ -1,8 +1,62 @@
 <script>
-    var baseurl = '{{ site.baseurl }}'
+    var baseurl = '{{ site.baseurl }}';
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }} "></script>
 <script src="{{ "/js/typeahead.bundle.min.js" | prepend: site.baseurl }} "></script>
 
 <script src="{{ "/js/main.js" | prepend: site.baseurl }} "></script>
+
+<script>
+    var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373&unit=0&lg=english&FcstType=dwml';
+
+    $.ajax({
+        type: "GET",
+        url: nwsUrl,
+        cache: true,
+        dataType: "xml",
+        success: function(xml) {
+            $(xml).find('hazards').each(function() {
+                var advisoryText = $(this).find('hazard').attr('headline');
+                var advisoryUrl = $(this).find('hazardTextURL').text();
+
+                var nwsDiv = document.getElementById('nws-advisories');
+                var p = document.createElement('p');
+                p.setAttribute('style', 'background-color:yellow');
+                var b = document.createElement('b');
+                var a = document.createElement('a');
+                a.setAttribute('href', advisoryUrl);
+                a.setAttribute('target', '_blank');
+                a.setAttribute('style', 'color:black');
+                var text = document.createTextNode(advisoryText);
+                a.appendChild(text);
+                b.appendChild(a);
+                p.appendChild(b);
+                nwsDiv.appendChild(p);
+            });
+            var nwsDiv = document.getElementById('nws-advisories');
+            var p = document.createElement('p');
+            var a = document.createElement('a');
+            a.setAttribute('href', 'https://www.weather.gov/eax/');
+            a.setAttribute('target', '_blank');
+            var text = document.createTextNode("Weather Forcast from the NWS Office in Kansas City, MO");
+            a.appendChild(text);
+            p.appendChild(a);
+            nwsDiv.appendChild(p);
+        }
+    });
+
+//    var response = $.get(nwsUrl, function(data) {
+//        console.log("success");
+//        console.log(data.documentElement);
+//        var xmlDoc = $.parseXML(data.documentElement);
+//        console.log(xmlDoc);
+//        //xmlDoc.find('hazards').each(function() {
+//        //    console.log($('this').find('hazard').text());
+//    }).done(function() {
+//        console.log("done");
+//    }).fail(function() {
+//        console.log("fail");
+//    });
+
+</script>
