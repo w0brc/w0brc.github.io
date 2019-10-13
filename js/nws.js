@@ -1,11 +1,22 @@
 var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373&unit=0&lg=english&FcstType=dwml';
-//var nwsUrl = '/testNws.dwml';
 
 $.ajax({
     type: "GET",
     url: nwsUrl,
     cache: true,
     dataType: "xml",
+    error: function() {
+        console.log("error");
+        var text = document.createTextNode('<Failed to load weather details - click here to refresh the page>');
+        var a = document.createElement('a');
+        a.setAttribute('href', '.');
+        a.appendChild(text);
+        var p = document.createElement('p');
+        p.setAttribute('style', 'background-color:Azure');
+        p.appendChild(a);
+        var nwsDiv = document.getElementById('nws-advisories');
+        nwsDiv.appendChild(p);
+    },
     success: function(xml) {
         $(xml).find('hazards').each(function() {
             var advisoryText = $(this).find('hazard').attr('headline');
