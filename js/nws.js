@@ -18,7 +18,9 @@ $.ajax({
         nwsDiv.appendChild(p);
     },
     success: function(xml) {
+        var size = 0;
         $(xml).find('hazards').each(function() {
+            size++;
             var advisoryText = $(this).find('hazard').attr('headline');
             var advisoryUrl = $(this).find('hazardTextURL').text();
 
@@ -226,13 +228,25 @@ $.ajax({
                 default:
                     break;
             }
-            //p.setAttribute('style', 'background-color:#00FF00');
             a.appendChild(text);
             b.appendChild(a);
             p.appendChild(b);
             nwsDiv.appendChild(p);
         });
+
         var nwsDiv = document.getElementById('nws-advisories');
+
+        //If no advisories, create an element for it
+        if (size == 0) {
+            var p = document.createElement('p');
+            p.style.cssText = 'border:thin solid';
+            var text = document.createTextNode('No active NWS advisories');
+            var b = document.createElement('b');
+            b.appendChild(text);
+            p.appendChild(b);
+            nwsDiv.appendChild(p);
+        }
+
         var p = document.createElement('p');
         var a = document.createElement('a');
         a.setAttribute('href', 'https://www.weather.gov/eax/');
