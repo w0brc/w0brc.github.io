@@ -22,70 +22,72 @@ layout: index
     <div class="row">
         <div class="col-sm-7 text-center" id="nws-advisories">
             <p>
-            <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=38.89764420000006&lon=-92.73725839999997">Current Weather Advisories for Boonville, MO:</a>
+            <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373">Current Weather Advisories for Boonville, MO:</a>
             </p>
         </div>
         <div class="col-sm-5 text-left" id="nws-current-conditions" style="border:thin solid">
             <div class="row">
-                <div class="col-sm-4 text-center">
-                    <div class="row">
-                        <p><u>Current Weather</u></p>
-                    </div>
-                    <div class="row" id="nws-condition-img">
-                        <img src="http://forecast.weather.gov/newimages/large/nsct.png"></img>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-5 text-center">
-                            <div class="row">
-                                <br/>
-                                <h4><b><p id="nws-condition">Thunderstorm of Epic Proportions</p></b></h3>
-                            </div>
-                            <div class="row">
-                                <h4><b><p id="nws-temperature">57°</p></b></h3>
-                            </div>
+                <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373">
+                    <div class="col-sm-4 text-center">
+                        <div class="row">
+                            <p>Current Weather</p>
                         </div>
-                        <div class="col-sm-7">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p><b>Humidity:</b></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p id="nws-humidity">64%</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p><b>Wind:</b></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p id="nws-windspeed">SE 9 mph</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p><b>Barometer:</b></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p id="nws-barometer">29.93 in</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p><b>Dewpoint:</b></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p id="nws-dewpoint">45°</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 text-center">
-                                    <p><b>Updated</b><span id="nws-timestamp">14 Oct 8:53 pm CDT</span</p>
-                                </div>
-                            </div>
+                        <div class="row">
+                            <img id="nws-summary-img"></img>
                         </div>
                     </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-5 text-center">
+                                <div class="row">
+                                    <br/>
+                                    <h4><b><p id="nws-summary"></p></b></h4>
+                                </div>
+                                <div class="row">
+                                    <h4><b><p id="nws-temperature"><p></b></h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><b>Dewpoint:</b></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p id="nws-dewpoint"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><b>Humidity:</b></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p id="nws-humidity"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><b>Wind:</b></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p id="nws-wind"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><b>Barometer:</b></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p id="nws-barometer"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                        <p><b>Updated</b><span id="nws-timestamp"></span</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -110,10 +112,10 @@ layout: index
                 {% endfor %}
             </ul>
         </div>
-        <div class="col-sm-3 text-left">
+        <div class="col-sm-3 text-center">
             <div class="fb-page" data-href="https://www.facebook.com/BoonvilleAmateurRadioClub" data-tabs="timeline,events,messages" data-width="500" data-height="532" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/BoonvilleAmateurRadioClub" class="fb-xfbml-parse-ignore"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BoonvilleAmateurRadioClub">Visit us on Facebook!</a></blockquote></div>
         </div>
-        <div class="col-sm-2 text-right">
+        <div class="col-sm-2 text-center">
             <a target="_blank" rel="noopener noreferrer" href="http://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarn0nbh.php?image=random" alt="Solar-Terrestrial Data"></img></a>
         </div>
     </div>

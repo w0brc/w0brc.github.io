@@ -1,4 +1,7 @@
 var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373&unit=0&lg=english&FcstType=dwml';
+//var nwsUrl = '/testNws.dwml'
+
+var xmlResponse = '';
 
 $.ajax({
     type: "GET",
@@ -9,6 +12,7 @@ $.ajax({
         loadError();
     },
     success: function(xml) {
+        xmlResponse = xml;
         var nwsDiv = document.getElementById('nws-advisories');
         var totalHazards = loadSuccess(xml);
 
@@ -17,6 +21,9 @@ $.ajax({
 
         //Credit the NWS office
         addNwsCredit(nwsDiv);
+
+        //Handle current weather
+        addCurrentWeather(xml);
     }
 });
 
@@ -53,6 +60,60 @@ function addNwsCredit(nwsDiv) {
     a.appendChild(text);
     p.appendChild(a);
     nwsDiv.appendChild(p);
+}
+
+function addCurrentWeather(xml) {
+
+    var temperature = 'N/A';
+    var dewpoint = 'N/A';
+    var summary = 'N/A';
+    var humidity = 'N/A';
+    var summaryImg = '';
+    var barometer = 'N/A';
+    var timestamp = 'N/A';
+    var wind = 'N/A';
+
+    $(xml).find('data').each(function() {
+        if ($(this).attr('type') === 'current observations') {
+            $(this).find('temperature').each(function() {
+                var attr = $(this).attr('type');
+                var value = $(this).find('value').text() + String.fromCharCode(176) + 'F';
+                if (attr === 'apparent') {
+                    temperature = value;
+                } else if (attr === 'dew point') {
+                    dewpoint = value;
+                }
+            });
+
+            humidity = $(this).find('humidity').find('value').text() + '%';
+            summary = $(this).find('weather-conditions').attr('weather-summary');
+            summaryImg = $(this).find('conditions-icon').find('icon-link').text().replace('/medium/', '/large/');
+            barometer = $(this).find('pressure').text() + ' in';
+            var mph = 'N/A';
+            $(this).find('wind-speed').each(function() {
+                var attr = $(this).attr('type');
+                var value = $(this).find('value').text()
+                if (attr === 'sustained') {
+                    mph = Math.round(value * 1.15078);
+                }
+            });
+            wind = degToCompass($(this).find('direction').text()) + ' ' + mph + ' mph';
+            timestamp = new Date($(this).find('start-valid-time').text()).toLocaleString();
+        }
+    });
+
+    document.getElementById('nws-summary-img').setAttribute('src', summaryImg);
+    addTextToElement('nws-summary', summary);
+    addTextToElement('nws-temperature', temperature);
+    addTextToElement('nws-humidity', humidity);
+    addTextToElement('nws-wind', wind);
+    addTextToElement('nws-barometer', barometer);
+    addTextToElement('nws-dewpoint', dewpoint);
+    addTextToElement('nws-timestamp', timestamp);
+}
+
+function addTextToElement(elementId, text) {
+    document.getElementById(elementId).appendChild(document.createTextNode(text));
 }
 
 function loadSuccess(xml) {
@@ -274,3 +335,9 @@ function loadSuccess(xml) {
 
     return totalHazards;
 };
+
+function degToCompass(num) {
+    var val = Math.floor((num / 22.5) + 0.5);
+    var arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
+    return arr[(val % 16)];
+}
