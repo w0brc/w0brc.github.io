@@ -27,22 +27,65 @@ layout: index
         </div>
         <div class="col-sm-5 text-left" id="nws-current-conditions" style="border:thin solid">
             <div class="row">
-                <div class="col-sm-12">
-                    <p>Current Observation</p>
+                <div class="col-sm-4 text-center">
+                    <div class="row">
+                        <p><u>Current Weather</u></p>
+                    </div>
+                    <div class="row" id="nws-condition-img">
+                        <img src="http://forecast.weather.gov/newimages/large/nsct.png"></img>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="http://forecast.weather.gov/newimages/medium/nsct.png"></img>
-                </div>
-                <div class="col-sm-9 text-left">
-                    <p>
-                    Humidity 	64%<br/>
-                    Wind Speed 	SE 9 mph<br/>
-                    Barometer 	29.93 in<br/>
-                    Dewpoint 	45°F(7C)<br/>
-                    Last update 	14 Oct 8:53 pm CDT<br/>
-                    </p>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-5 text-center">
+                            <div class="row">
+                                <br/>
+                                <h4><b><p id="nws-condition">Thunderstorm of Epic Proportions</p></b></h3>
+                            </div>
+                            <div class="row">
+                                <h4><b><p id="nws-temperature">57°</p></b></h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><b>Humidity:</b></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p id="nws-humidity">64%</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><b>Wind:</b></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p id="nws-windspeed">SE 9 mph</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><b>Barometer:</b></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p id="nws-barometer">29.93 in</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p><b>Dewpoint:</b></p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p id="nws-dewpoint">45°</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <p><b>Updated</b><span id="nws-timestamp">14 Oct 8:53 pm CDT</span</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
