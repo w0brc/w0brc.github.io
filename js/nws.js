@@ -87,7 +87,7 @@ function addCurrentWeather(xml) {
 
             humidity = $(this).find('humidity').find('value').text() + '%';
             summary = $(this).find('weather-conditions').attr('weather-summary');
-            summaryImg = $(this).find('conditions-icon').find('icon-link').text().replace('/medium/', '/large/');
+            summaryImg = $(this).find('conditions-icon').find('icon-link').text().replace('http://', 'https://').replace('/medium/', '/large/');
             barometer = $(this).find('pressure').text() + ' in';
             var mph = 'N/A';
             $(this).find('wind-speed').each(function() {
