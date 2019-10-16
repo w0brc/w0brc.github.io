@@ -16,27 +16,29 @@ layout: index
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-7 text-center">
-            {% include index/nws-advisories.html %}
-        </div>
-        <div class="col-sm-5 text-left" style="border:thin solid">
-            {% include index/nws-current-conditions.html %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <p><br/></p>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-sm-7">
-            {% include index/recent-posts.html %}
+            <div class="col-sm-12 text-center">
+                {% include index/nws-advisories.html %}
+            </div>
+            <div class="col-sm-12">
+                {% include index/recent-posts.html %}
+            </div>
         </div>
-        <div class="col-sm-3 text-center">
-            {% include index/facebook-widget.html %}
-        </div>
-        <div class="col-sm-2 text-center">
-            {% include index/hamsolar-widget.html %}
+        <div class="col-sm-5">
+            <div class="col-sm-12 text-left" style="border:thin solid">
+                {% include index/nws-current-conditions.html %}
+            </div>
+            <div class="col-sm-12">
+                <p><br/></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-7 text-center">
+                    {% include index/facebook-widget.html %}
+                </div>
+                <div class="col-sm-5 text-center">
+                    {% include index/hamsolar-widget.html %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
