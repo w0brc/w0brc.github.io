@@ -98,8 +98,8 @@ function addCurrentWeather(xml) {
                 }
             });
             wind = degToCompass($(this).find('direction').text()) + ' ' + mph + ' mph';
-            var date = new Date($(this).find('start-valid-time').text());
-            timestamp = date.toLocaleString();
+            var date = moment($(this).find('start-valid-time').text());
+            timestamp = date.format('D MMM h:mm a');
         }
     });
 
