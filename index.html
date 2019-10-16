@@ -12,84 +12,15 @@ layout: index
 <div class="container">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <p>
-            <b><a href="/about/repeaternet.html">Repeater</a>:</b> 147.360 MHz (+), PL 127.3
-            <b>|</b> <b><a href="/about/repeaternet.html">Nets</a>:</b> Thursdays @ 8:30 PM
-            <b>|</b> <b><a href="/about/meetings.html">Meetings</a>:</b> 2nd Saturday of the Month @ 9:00 AM in the Cooper County Emergency Operations Center
-            </p>
+            {% include index/summary.html %}
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-7 text-center" id="nws-advisories">
-            <p>
-            <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=38.96085&lon=-92.75202">Current Weather Advisories for Boonville, MO:</a>
-            </p>
+        <div class="col-sm-7 text-center">
+            {% include index/nws-advisories.html %}
         </div>
-        <div class="col-sm-5 text-left" id="nws-current-conditions" style="border:thin solid">
-            <div class="row">
-                <a target="_blank" href="https://forecast.weather.gov/MapClick.php?lat=38.96085&lon=-92.75202">
-                    <div class="col-sm-4 text-center">
-                        <div class="row">
-                            <p>Current Weather</p>
-                        </div>
-                        <div class="row">
-                            <img id="nws-summary-img"></img>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="row">
-                            <div class="col-sm-5 text-center">
-                                <div class="row">
-                                    <br/>
-                                    <h4><b><p id="nws-summary"></p></b></h4>
-                                </div>
-                                <div class="row">
-                                    <h4><b><p id="nws-temperature"><p></b></h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p><b>Dewpoint:</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="nws-dewpoint"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p><b>Humidity:</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="nws-humidity"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p><b>Wind:</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="nws-wind"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <p><b>Barometer:</b></p>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="nws-barometer"></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 text-center">
-                                        <p><b>Updated</b><span id="nws-timestamp"></span</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="col-sm-5 text-left" style="border:thin solid">
+            {% include index/nws-current-conditions.html %}
         </div>
     </div>
     <div class="row">
@@ -99,24 +30,13 @@ layout: index
     </div>
     <div class="row">
         <div class="col-sm-7">
-            <h2 class="page-heading">Recent posts:</h2>
-            <ul class="post-list">
-            {% for post in site.posts %}
-                <li>
-                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <h3>
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h3>
-                    <div class="h-divider"></div>
-                </li>
-                {% endfor %}
-            </ul>
+            {% include index/recent-posts.html %}
         </div>
         <div class="col-sm-3 text-center">
-            <div class="fb-page" data-href="https://www.facebook.com/BoonvilleAmateurRadioClub" data-tabs="timeline,events,messages" data-width="500" data-height="532" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/BoonvilleAmateurRadioClub" class="fb-xfbml-parse-ignore"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/BoonvilleAmateurRadioClub">Visit us on Facebook!</a></blockquote></div>
+            {% include index/facebook-widget.html %}
         </div>
         <div class="col-sm-2 text-center">
-            <a target="_blank" rel="noopener noreferrer" href="http://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solarn0nbh.php?image=random" alt="Solar-Terrestrial Data"></img></a>
+            {% include index/hamsolar-widget.html %}
         </div>
     </div>
 </div>
