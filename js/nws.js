@@ -1,4 +1,4 @@
-var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.8976&lon=-92.7373&unit=0&lg=english&FcstType=dwml';
+var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.9609&lon=-92.752&unit=0&lg=english&FcstType=dwml';
 //var nwsUrl = '/testNws.dwml'
 
 var xmlResponse = '';
@@ -98,7 +98,8 @@ function addCurrentWeather(xml) {
                 }
             });
             wind = degToCompass($(this).find('direction').text()) + ' ' + mph + ' mph';
-            timestamp = new Date($(this).find('start-valid-time').text()).toLocaleString();
+            var date = new Date($(this).find('start-valid-time').text());
+            timestamp = date.toLocaleString();
         }
     });
 
