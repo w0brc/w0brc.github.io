@@ -82,6 +82,15 @@ body {
   height: 75px;
   visibility: hidden;
 }
+//use this when dynamically updating an element but want to fix the location of the top of the element
+*[id].remove-block:before {
+  display: none;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
+
 .navbar-form .has-feedback .form-control-feedback{
   top:10px
 }
