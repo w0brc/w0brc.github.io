@@ -18,7 +18,9 @@ layout: default
         </div>
 
         <div class="col-md-8">
-            <h1>{{ page.title }}</h1>
+            <div id="post-title">
+                <h1>{{ page.title }}</h1>
+            </div>
             <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             <div  id="markdown-content-container">{{ content }}</div>
             <hr>

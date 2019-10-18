@@ -7,3 +7,15 @@
 <script src="{{ "/js/moment.min.js" | prepend: site.baseurl }} "></script>
 
 <script src="{{ "/js/main.js" | prepend: site.baseurl }} "></script>
+<script>
+    var stuff;
+    $.ajax({
+        url:'/blog/2019/10/13/hamfest-2020-announcement',
+        type:'GET',
+        success: function(data){
+            stuff=data;
+            $('#hamfest-title').html($(data).find('#post-title').html());
+            $('#hamfest-content').html($(data).find('#markdown-content-container').html());
+        }
+    });
+</script>
