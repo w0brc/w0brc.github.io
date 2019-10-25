@@ -18,17 +18,19 @@
       url: https://ares-mo.org
     - title: ARRL Band Plan
       url: http://www.arrl.org/band-plan
+    - title: Larry's List
+      url: http://www.larryslist.info
     - title: Current VHF Propagation Map
       url: http://aprs.mennolink.org
     - title: DXMAPS - QSO/SWL Real Time Information
       url: https://www.dxmaps.com
 - title: About Us
   sublinks:
-      - title: Repeater and 2-Meter Nets
-        url: /about/repeaternet.html
-      - title: Club Meetings
-        url: /about/meetings.html
-      - title: Become a ham!
-        url: /about/testing.html
-      - title: Contact Us
-        url: /about/contact.html
+    - title: Repeater and 2-Meter Nets
+      url: /about/repeaternet.html
+    - title: Club Meetings
+      url: /about/meetings.html
+    - title: Become a ham!
+      url: /about/testing.html
+    - title: Contact Us
+      url: /about/contact.html
