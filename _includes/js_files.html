@@ -2,11 +2,11 @@
     var baseurl = '{{ site.baseurl }}';
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }} "></script>
-<script src="{{ "/js/typeahead.bundle.min.js" | prepend: site.baseurl }} "></script>
+<script src="{{ "/js/bootstrap.min.js" | relative_url }} "></script>
+<script src="{{ "/js/typeahead.bundle.min.js" | relative_url }} "></script>
 <script src="{{ "/js/moment.min.js" | prepend: site.baseurl }} "></script>
 
-<script src="{{ "/js/main.js" | prepend: site.baseurl }} "></script>
+<script src="{{ "/js/main.js" | relative_url }} "></script>
 <script>
     $.ajax({
         url:'/blog/2019/10/13/hamfest-2020-announcement',
