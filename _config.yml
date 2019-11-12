@@ -14,14 +14,15 @@ git_edit_address: https://github.com/w0brc/club-website/blob/gh-pages
 # Google Analytics
 google_analytics: UA-149570219-1
 
-# theme options from https://bootswatch.com/
+# theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: united
+bootwatch: united # cerulean cosmo custom cyborg darkly flatly journal lumen paper readable sandstone simplex slate solar spacelab superhero yeti
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems:
+# Plugins (previously gems:)
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
