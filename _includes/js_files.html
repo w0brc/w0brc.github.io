@@ -5,6 +5,13 @@
 <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }} "></script>
 <script src="{{ "/assets/js/typeahead.bundle.min.js" | relative_url }} "></script>
 <script src="{{ "/assets/js/moment.min.js" | relative_url }} "></script>
+<script src="{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }} "></script>
+<script>
+    if ($('.galleria').length) {
+        Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
+        Galleria.run('.galleria');
+    }
+</script>
 
 <script src="{{ "/assets/js/main.js" | relative_url }} "></script>
 <script>
