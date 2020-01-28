@@ -2,10 +2,8 @@
   sublinks:
     - title: 2020
       url: /hamfests/2020.html
-    - title: 2019
-      url: /hamfests/2019.html
-    - title: 2018
-      url: /hamfests/2018.html
+    - title: Archive
+      url: /hamfests/archive.html
 - title: Resources
   sublinks:
     - title: Local Nets
