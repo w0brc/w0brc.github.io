@@ -9,7 +9,14 @@
 <script>
     if ($('.galleria').length) {
         Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
-        Galleria.run('.galleria');
+        Galleria.run('.galleria', {
+            transition: 'slide',
+            imageCrop: false,
+            autoplay: true,
+            debug: false,
+            swipe: true,
+            lightbox: true
+        });
     }
 </script>
 
