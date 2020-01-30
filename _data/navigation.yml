@@ -22,6 +22,8 @@
       url: http://aprs.mennolink.org
     - title: DXMAPS - QSO/SWL Real Time Information
       url: https://www.dxmaps.com
+    - title: FCC - Amateur Radio Service
+      url: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/amateur-radio-service
 - title: About Us
   sublinks:
     - title: Repeater and 2-Meter Nets
