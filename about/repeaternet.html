@@ -28,5 +28,28 @@ layout: default
             <p>The club hosts a weekly 2-meter net on the W0BRC club repeater every Thursday evening at 8:30 PM. We welcome and encourage all amateur radio operators to participate.</p>
             <p class="text-center"><a href="/about/netscript.txt">Click here for the recommended net script</a></p>
         </div>
+        <div class="col-sm-12">
+            <h3 class="text-center">Net Control Schedule</h3>
+            <div id="no-more-tables text-center">
+                <table class="col-sm-offset-4 col-sm-4 table-bordered table-hover table-striped table-condensed cf">
+                    <thead class="cf">
+                        <tr>
+                            <th class="text-right">Week</th>
+                            <th class="text-center">Callsign</th>
+                            <th class="text-center">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for control in site.data.netcontrols %}
+                        <tr>
+                            <td data-title="Week" class="text-right">{{ control.week }}</th>
+                            <td data-title="Callsign" class="text-center">{{ control.callsign }}</th>
+                            <td data-title="Name" class="text-center">{{ control.name }}</th>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
