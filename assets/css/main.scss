@@ -101,6 +101,12 @@ body {
   background: #000;
 }
 
+// Make row easier to read when hovering
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
+  background-color: #fc8d64;
+}
+
 /* No More Tables by Chris Coyier (https://css-tricks.com/responsive-data-tables/) */
 @media only screen and (max-width: 800px) {
     
