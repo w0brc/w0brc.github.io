@@ -3,26 +3,27 @@
 </script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="{{ "/assets/js/bootstrap.min.js" | relative_url }} "></script>
-<script src="{{ "/assets/js/typeahead.bundle.min.js" | relative_url }} "></script>
-<script src="{{ "/assets/js/main.js" | relative_url }} "></script>
+<script src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/typeahead.bundle.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
-<script src="{{ "/assets/js/moment.min.js" | relative_url }} "></script>
-<script src="{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }} "></script>
+<script src="{{ "/assets/js/moment.min.js" | relative_url }}"></script>
 
-<script defer src="{{ "/assets/js/hamfest_mover.js" | relative_url }} "></script>
+<script defer src="{{ "/assets/js/hamfest_mover.js" | relative_url }}"></script>
 
 <script>
     $(document).ready(function() {
         if ($('.galleria').length) {
-            Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
-            Galleria.run('.galleria', {
-                transition: 'slide',
-                imageCrop: false,
-                autoplay: true,
-                debug: false,
-                swipe: true,
-                lightbox: true
+            $.getScript("{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }}", function() {
+                Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
+                Galleria.run('.galleria', {
+                    transition: 'slide',
+                    imageCrop: false,
+                    autoplay: true,
+                    debug: false,
+                    swipe: true,
+                    lightbox: true
+                });
             });
         }
     });
