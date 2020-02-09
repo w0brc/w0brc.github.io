@@ -1,11 +1,15 @@
 <script>
     var baseurl = '{{ site.baseurl }}';
 </script>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="{{ "/assets/js/bootstrap.min.js" | relative_url }} "></script>
 <script src="{{ "/assets/js/typeahead.bundle.min.js" | relative_url }} "></script>
+<script src="{{ "/assets/js/main.js" | relative_url }} "></script>
+
 <script src="{{ "/assets/js/moment.min.js" | relative_url }} "></script>
 <script src="{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }} "></script>
+
 <script>
     if ($('.galleria').length) {
         Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
@@ -20,7 +24,6 @@
     }
 </script>
 
-<script src="{{ "/assets/js/main.js" | relative_url }} "></script>
 <script>
     if (window.location.pathname === '/') {
         $.ajax({
@@ -35,3 +38,5 @@
         });
     }
 </script>
+
+<script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
