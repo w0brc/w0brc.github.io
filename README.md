@@ -1,4 +1,4 @@
-# w0brc.github.io
+# w0brc.org
 
 Please visit the [W0BRC Boonville Amateur Radio Club website](https://w0brc.org).
 
@@ -11,7 +11,7 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/w0brc/w0brc.github.io.git
+git clone https://github.com/w0brc/club-website.git
 cd w0brc.github.io
 
 # install dependencies with bundler
@@ -32,15 +32,15 @@ that serves files from Nginx for better performance in production.
 Build the image for your site's `JEKYLL_BASEURL`:
 
 ```
-docker build --build-arg JEKYLL_BASEURL="/your-base/url" -t w0brc.github.io .
+docker build --build-arg JEKYLL_BASEURL="/your-base/url" -t club-website .
 ```
 
 (or leave it empty for root: `JEKYLL_BASEURL=""`) and serve it:
 
 ```
-docker run -p 8080:80 w0brc.github.io
+docker run -p 8080:80 club-website
 ```
 
 ## License
 
-Released under [the MIT license](LICENSE).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE).
