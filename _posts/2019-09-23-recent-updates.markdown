@@ -2,7 +2,7 @@
 title: Recent Website Updates
 date: '2019-09-23 23:16:00'
 author: KC0ELB
-categories: website
+tags: website
 ---
 
 It's been over a week since we started the website and several updates have been made. From changes to the main page to the links in the navagation bar at the top, we have been slowly implementing suggestions made by club members.

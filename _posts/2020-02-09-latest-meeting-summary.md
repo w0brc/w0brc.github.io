@@ -3,7 +3,7 @@ title: 'Meeting Summary: February 8, 2020'
 author: W0MQD
 date: '2020-02-09 08:28:44'
 category: Summary
-tags: meeting,net,hamfest
+tags: meeting net hamfest officers
 ---
 
 At the last meeting on February 8, 2020, along with discussion about the upcoming hamfest, club members were elected into office for 2020:
