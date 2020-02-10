@@ -15,10 +15,10 @@ At the last meeting on February 8, 2020, along with discussion about the upcomin
 > **Treasurer**: Earl, KF0GE<br/>
 > **Secretary**: Tony, W0MQD
 
-Net operation was also discussed, and the new weekly Net Control schedule can be found on the [repeater and weekly net](/about/repeaternet.html) page.
+Net operation was also discussed, and the new weekly Net Control schedule can be found on the [repeater and weekly net](/about/repeaternet#net-control) page.
 
-Lastly, it has been decided when club meetings are postponed due to weather or other events that the meeting will instead be held the next Saturday (3rd Saturday of the month) when possible. Announcements will be given on the [Thursday evening 8:30 PM 2-meter net](/about/repeaternet.html) prior to the original meeting date and/or the [club's Facebook page](https://www.facebook.com/BoonvilleAmateurRadioClub).
+Lastly, it has been decided when club meetings are postponed due to weather or other events that the meeting will instead be held the next Saturday (3rd Saturday of the month) when possible. Announcements will be given on the [Thursday evening 8:30 PM 2-meter net](/about/repeaternet#net-schedule) prior to the original meeting date and/or the [club's Facebook page](https://www.facebook.com/BoonvilleAmateurRadioClub).
 
-The next club meeting is scheduled for [Saturday, March 14, 2020](/about/meetings.html).
+The next club meeting is scheduled for [Saturday, March 14, 2020](/about/meetings#meetings).
 
 73s
