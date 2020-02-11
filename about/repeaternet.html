@@ -10,49 +10,65 @@ layout: default
     </div>
     <div class="row">
         <div class="col-sm-12 text-left">
-            <a class="anchor" id="repeater-info"></a>
-            <h3>Repeater Information</h3>
-        </div>
+         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 text-left">
-            <p>Our 2-meter repeater operates under the callsign of W0BRC located in <a target="_blank" href="https://maps.google.com/?q=38.953164,-92.755622">Boonville, MO</a>, on the fequency of 147.360 MHz (+ offset), with an output PL tone of 127.3. In the event of major interference, an input PL tone of 127.3 may be enforced.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 text-left">
-            <a class="anchor" id="net-schedule"></a>
-            <h3>2-Meter Net Schedule</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 text-left">
-            <p>The club hosts a weekly 2-meter net on the W0BRC club repeater every Thursday evening at 8:30 PM. We welcome and encourage all amateur radio operators to participate.</p>
-            <p class="text-center"><a href="/about/netscript.txt">Click here for the recommended net script</a></p>
-        </div>
-        <div class="col-sm-12">
-            <a class="anchor" id="net-control"></a>
-            <h3 class="text-center">Net Control Schedule</h3>
-            <div id="no-more-tables text-center">
-                <table class="col-sm-offset-4 col-sm-4 table-bordered table-hover table-striped table-condensed cf">
-                    <thead class="cf">
-                        <tr>
-                            <th class="text-right">Week</th>
-                            <th class="text-center">Callsign</th>
-                            <th class="text-center">Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for control in site.data.netcontrols %}
-                        <tr>
-                            <td data-title="Week" class="text-right">{{ control.week }}</th>
-                            <td data-title="Callsign" class="text-center">{{ control.callsign }}</th>
-                            <td data-title="Name" class="text-center">{{ control.name }}</th>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+        <div class="col-sm-6 text-left">
+            <div class="row">
+                <div class="col-sm-12">
+                   <a class="anchor" id="repeater-info"></a>
+                   <h3>Repeater Information</h3>
+                    <p>Our 2-meter repeater operates under the callsign of W0BRC located in Boonville, MO, on the fequency of 147.360 MHz (+ offset), with an output PL tone of 127.3. In the event of major interference, an input PL tone of 127.3 may be enforced.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="anchor" id="net-schedule"></a>
+                    <h3>2-Meter Net Schedule</h3>
+                    <p>The club hosts a weekly 2-meter net on the W0BRC club repeater every Thursday evening at 8:30 PM. We welcome and encourage all amateur radio operators to participate.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p><a href="/about/netscript.txt">Click here for the recommended net script</a></p>
+                    <a class="anchor" id="net-control"></a>
+                    <h3>Net Control Schedule</h3>
+                    <div id="no-more-tables">
+                        <table class="col-sm-12 table-bordered table-hover table-striped table-condensed cf">
+                            <thead class="cf">
+                                <tr>
+                                    <th class="text-right">Week</th>
+                                    <th class="text-center">Callsign</th>
+                                    <th class="text-center">Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for control in site.data.netcontrols %}
+                                <tr>
+                                    <td data-title="Week" class="text-right">{{ control.week }}</th>
+                                    <td data-title="Callsign" class="text-center">{{ control.callsign }}</th>
+                                    <td data-title="Name" class="text-center">{{ control.name }}</th>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="col-sm-6 text-center">
+            <h3>Repeater Location</h3>
+            <div class="google-maps">
+                <iframe 
+                    width="600"
+                    height="450"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen="true"
+                    src="https://maps.google.com/maps?q=38.953167,-92.755611&output=embed&z=8">
+                    ></iframe>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
