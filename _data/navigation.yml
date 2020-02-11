@@ -1,15 +1,15 @@
 - title: Hamfests
   sublinks:
     - title: 2020
-      url: /hamfests/2020.html
+      url: /hamfests/2020
     - title: Archive
-      url: /hamfests/archive.html
+      url: /hamfests/archive
 - title: Resources
   sublinks:
     - title: Local Nets
-      url: /resources/localnets.html
+      url: /resources/localnets
     - title: Local Clubs
-      url: /resources/localclubs.html
+      url: /resources/localclubs
     - title: Missouri Repeater Council
       url: http://database.missourirepeater.org/MissouriRepeater/database/default.aspx
     - title: Missouri State ARES
@@ -27,10 +27,10 @@
 - title: About Us
   sublinks:
     - title: Repeater and 2-Meter Nets
-      url: /about/repeaternet.html
+      url: /about/repeaternet
     - title: Club Meetings
-      url: /about/meetings.html
+      url: /about/meetings
     - title: Become a ham!
-      url: /about/testing.html
+      url: /about/testing
     - title: Contact Us
-      url: /about/contact.html
+      url: /about/contact
