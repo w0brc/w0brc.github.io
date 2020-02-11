@@ -7,6 +7,11 @@ layout: default
         <div class="col-sm-12 text-center">
             <h1>Local 2-Meter Nets</h1>
         </div>
+        <div class="col-sm-12 text-center">
+            <p>
+            If you wish to have a net added/changed on this page, <a href="/about/contact">contact us</a> so we can get the information updated as soon as possible.
+            </p>
+        </div>
         <div id="no-more-tables">
             <table class="col-sm-12 table-bordered table-hover table-striped table-condensed cf">
         		<thead class="cf">
@@ -20,7 +25,6 @@ layout: default
                         <th>Day</th>
                         <th>Callsign/Operator</th>
                         <th>Notes</th>
-
                     </tr>
                 </thead>
                 <tbody>
@@ -58,19 +62,11 @@ layout: default
                             {% else %}
                             {{ net.notes }}
                             {% endif %}
-
                         </td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-12 text-center">
-            <br/>
-            <p>
-            If you wish to have a net added/changed on this page, <a href="/about/contact">contact us</a> so we can get the information updated as soon as possible.
-            </p>
-        </div>
-
     </div>
 </div>
