@@ -10,10 +10,11 @@ layout: default
                 <h4>RECENT POSTS</h4>
                 <ul class="list-unstyled post-list-container">
                     {% for post in site.posts limit:10 %}
-                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
+                    <li><i class="fa fa-thumb-tack"></i> <a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
                     {% endfor %}
-                    <li><a href="{{ "/blog/allposts" | relative_url }}">All posts ...</a></li>
-                    <li><a href="{{ "/blog/tags" | relative_url }}">All tags ...</a></li>
+                    <div class="h-divider"></div>
+                    <li><i class="fa fa-archive"></i> <a href="{{ "/blog/allposts" | relative_url }}">All Posts</a></li>
+                    <li><i class="fa fa-tags" aria-hidden="true"></i> <a href="{{ "/blog/tags" | relative_url }}">All Tags</a></li>
                 </ul>
             </div>
         </div>
