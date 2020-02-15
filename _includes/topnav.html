@@ -34,6 +34,10 @@
                                 {% else %}
                                 <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">
                                 {% endif %}
+                                {% if sublink.icon %}
+                                <i class="fa {{ sublink.icon }}"></i>
+                                {% endif %}
+
                                 {{ sublink.title }}</a>
                             </li>
                             {% endif %}

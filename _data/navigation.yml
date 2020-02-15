@@ -33,4 +33,5 @@
     - title: Become a ham!
       url: /about/testing
     - title: Contact Us
+      icon: fa-envelope-open
       url: /about/contact
