@@ -1,31 +1,35 @@
 var nwsUrl = 'https://forecast.weather.gov/MapClick.php?lat=38.9609&lon=-92.752&unit=0&lg=english&FcstType=dwml';
 //var nwsUrl = '/testNws.dwml'
 
+window.onload = loadNwsWidgets();
+
 var xmlResponse = '';
 
-$.ajax({
-    type: "GET",
-    url: nwsUrl,
-    cache: true,
-    dataType: "xml",
-    error: function() {
-        loadError();
-    },
-    success: function(xml) {
-        xmlResponse = xml;
-        var nwsDiv = document.getElementById('nws-advisories');
-        var totalHazards = loadSuccess(xml);
+function loadNwsWidgets() {
+    $.ajax({
+        type: "GET",
+        url: nwsUrl,
+        cache: true,
+        dataType: "xml",
+        error: function() {
+            loadError();
+        },
+        success: function(xml) {
+            xmlResponse = xml;
+            var nwsDiv = document.getElementById('nws-advisories');
+            var totalHazards = loadSuccess(xml);
 
-        //If no advisories, create an element for it
-        handleNoAdvisories(totalHazards, nwsDiv);
+            //If no advisories, create an element for it
+            handleNoAdvisories(totalHazards, nwsDiv);
 
-        //Credit the NWS office
-        addNwsCredit(nwsDiv);
+            //Credit the NWS office
+            addNwsCredit(nwsDiv);
 
-        //Handle current weather
-        addCurrentWeather(xml);
-    }
-});
+            //Handle current weather
+            addCurrentWeather(xml);
+        }
+    });
+};
 
 function loadError() {
     var text = document.createTextNode('<Failed to load weather details - click here to refresh the page>');
@@ -341,4 +345,4 @@ function degToCompass(num) {
     var val = Math.floor((num / 22.5) + 0.5);
     var arr = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
     return arr[(val % 16)];
-}
+};

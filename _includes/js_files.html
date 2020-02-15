@@ -12,21 +12,22 @@
 <script defer src="{{ "/assets/js/hamfest_mover.js" | relative_url }}"></script>
 
 <script>
-    $(document).ready(function() {
-        if ($('.galleria').length) {
-            $.getScript("{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }}", function() {
-                Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
-                Galleria.run('.galleria', {
-                    transition: 'slide',
-                    imageCrop: false,
-                    autoplay: true,
-                    debug: false,
-                    swipe: true,
-                    lightbox: true
+    window.onload =
+        function() {
+            if ($('.galleria').length) {
+                $.getScript("{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }}", function() {
+                    Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
+                    Galleria.run('.galleria', {
+                        transition: 'slide',
+                        imageCrop: false,
+                        autoplay: true,
+                        debug: false,
+                        swipe: true,
+                        lightbox: true
+                    });
                 });
-            });
-        }
-    });
+            }
+        };
 </script>
 
 {% if site.google_analytics and jekyll.environment == 'production' %}
@@ -44,4 +45,4 @@
 </script>
 {% endif %}
 
-<script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+<script defer src="{{ "/assets/js/facebook_widget.js" | relative_url }}"></script>

@@ -60,13 +60,14 @@ layout: default
             <h3>Repeater Location</h3>
             <div class="google-maps">
                 <iframe 
+                    id="repeater-location"
                     width="600"
                     height="450"
                     frameborder="0"
                     style="border:0;"
-                    allowfullscreen="true"
-                    src="https://maps.google.com/maps?q=38.953167,-92.755611&output=embed&z=8">
-                    ></iframe>
+                    allowfullscreen="true">
+                </iframe>
+                <script defer src="{{ "/assets/js/google_maps.js" | relative_url }}"></script>
             </div>
         </div>
     </div>
