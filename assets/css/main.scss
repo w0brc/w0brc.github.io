@@ -15,11 +15,8 @@
   "bootstrap",
 
   {% if site.bootwatch %}
-    "bootswatch/{{site.bootwatch | downcase}}/bootswatch",
+    "bootswatch/{{site.bootwatch | downcase}}/bootswatch"
   {% endif %}
-
-  "syntax-highlighting",
-  "typeahead"
 ;
 
 html {
