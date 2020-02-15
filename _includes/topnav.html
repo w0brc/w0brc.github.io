@@ -13,7 +13,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Posts</a></li>
+                <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}"><i class="fa fa-thumb-tack"></i> Posts</a></li>
 	        	{% assign links = site.data.navigation %}
                 {% for link in links %}
                     {% assign class = nil %}
