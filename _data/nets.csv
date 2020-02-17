@@ -1,17 +1,17 @@
 location,name,frequency,offset,tone,time,day,callsign,notes
-Warsaw,Benton County ARES Net,146.925,-,107.2,7:00 PM,SUN,WB0EM,
-Columbia,Columbia Area Simplex Net,146.440,Simplex,,8:00 PM,SUN,AB0SE,
-Columbia,Columbia Area Digital Net,3.580,Digital,,8:30 PM,SUN,AB0SE,Use the mfsk1 digital protocol
-Sedalia,SPARK Repeater Net,147.030,-,179.9,8:00 PM,SUN,WA0SDO,
-Warrensburg,WAARCI 2M/ARES/ARRL Sunday Night Net,146.880,-,107.2,8:30 PM,SUN,W0AU,
-Carrollton,Carroll County ARES Net,146.655,-,94.8,7:00 PM,MON,N0SAX,
-Mexico,Audrain Emergency Communications ARES Net,147.255,+,127.3,8:00 PM,TUE,AA0RC,Extreme-wide area coverage repeater located on the KWWR backup tower 2 miles west of Mexico.
-Sedalia,,147.030,Simplex,179.9,8:00 PM,WED,KD0ETL,The purpose is to establish a common freqency if the repeater is down and to see how efficient this is to work.
-Jefferson City,,147.000,-,127.3,8:00 PM,WED,K0ETY,
-Macon,,146.805,-,156.7,8:30 PM,WED,N0PR,
-Fulton,Callaway Amateur Radio League (CARL) Net,147.315,+,,8:45 PM,WED,KC0MV,Can also use a negative (-) offset west of Fulton/meets on simplex every 5th Wednesday of the month at 8:30 PM then repeater at normal time.
-Columbia,Central Missouri Emergency Net,146.760,-,127.3,9:00 PM,WED,K0SI,
-Warrensburg,WAARCI Youth Net,146.880,-,107.2,8:00 PM,THURS,W0AU,Encouraging check-ins from hams 17 or under/18 and in high school/youth wishing to check-in via 3rd-party.
-Moberly,,147.090,+,127.3,8:00 PM,THURS,K0MOB,No nets 3rd Thursday of month due to club meeting.
-Boonville,Boonville Amateur Radio Club 2-Meter Net,147.360,+,127.3,8:30 PM,THURS,W0BRC,
-Stover,,147.390,+,,8:30 PM,THURS,KB0QWQ,
+Warsaw,Benton County ARES Net,146.925 MHz,-,107.2 Hz,7:00 PM,SUN,WB0EM,
+Columbia,Columbia Area Simplex Net,146.440 MHz,Simplex,,8:00 PM,SUN,AB0SE,
+Columbia,Columbia Area Digital Net,3.580 MHz,Digital,,8:30 PM,SUN,AB0SE,Use the 'mfsk16' digital protocol
+Sedalia,SPARK Repeater Net,147.030 MHz,-,179.9 Hz,8:00 PM,SUN,WA0SDO,
+Warrensburg,WAARCI 2M/ARES/ARRL Sunday Night Net,146.880 MHz,-,107.2 Hz,8:30 PM,SUN,W0AU,
+Carrollton,Carroll County ARES Net,146.655 MHz,-,94.8 Hz,7:00 PM,MON,N0SAX,
+Mexico,Audrain Emergency Communications ARES Net,147.255 MHz,+,127.3 Hz,8:00 PM,TUE,AA0RC,Extreme-wide area coverage repeater located on the KWWR backup tower 2 miles west of Mexico.
+Sedalia,,147.030 MHz,Simplex,179.9 Hz,8:00 PM,WED,KD0ETL,The purpose is to establish a common freqency if the repeater is down and to see how efficient this is to work.
+Jefferson City,,147.000 MHz,-,127.3 Hz,8:00 PM,WED,K0ETY,
+Macon,,146.805 MHz,-,156.7 Hz,8:30 PM,WED,N0PR,
+Fulton,Callaway Amateur Radio League (CARL) Net,147.315 MHz,+,,8:45 PM,WED,KC0MV,Can also use a negative (-) offset west of Fulton/meets on simplex every 5th Wednesday of the month at 8:30 PM then repeater at normal time.
+Columbia,Central Missouri Emergency Net,146.760 MHz,-,127.3 Hz,9:00 PM,WED,K0SI,
+Warrensburg,WAARCI Youth Net,146.880 MHz,-,107.2 Hz,8:00 PM,THURS,W0AU,Encouraging check-ins from hams 17 or under/18 and in high school/youth wishing to check-in via 3rd-party.
+Moberly,,147.090 MHz,+,127.3 Hz,8:00 PM,THURS,K0MOB,No nets 3rd Thursday of month due to club meeting.
+Boonville,Boonville Amateur Radio Club 2-Meter Net,147.360 MHz,+,127.3 Hz,8:30 PM,THURS,W0BRC,
+Stover,,147.390 MHz,+,,8:30 PM,THURS,KB0QWQ,
