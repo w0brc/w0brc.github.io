@@ -24,6 +24,10 @@
       url: https://www.dxmaps.com
     - title: FCC - Amateur Radio Service
       url: https://www.fcc.gov/wireless/bureau-divisions/mobility-division/amateur-radio-service
+    - title: NWS St. Louis 2020 Spotter Talks
+      url: https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=4b68b0f227a346739061e78d94d09950
+    - title: Weather Spotter's Field Guide
+      url: https://www.weather.gov/media/owlie/SGJune6-11(1).pdf
 - title: About Us
   sublinks:
     - title: Repeater and 2-Meter Nets
