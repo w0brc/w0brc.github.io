@@ -11,22 +11,35 @@
 <script defer src="{{ "/assets/js/hamfest_mover.js" | relative_url }}"></script>
 
 <script>
-    window.onload =
-        function() {
-            if ($('.galleria').length) {
-                $.getScript("{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }}", function() {
-                    Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
-                    Galleria.run('.galleria', {
-                        transition: 'slide',
-                        imageCrop: false,
-                        autoplay: true,
-                        debug: false,
-                        swipe: true,
-                        lightbox: true
-                    });
+    window.onload = function() {
+        if ($('.galleria').length) {
+            $.getScript("{{ "/assets/galleria/1.6.1/galleria.min.js" | relative_url }}", function() {
+                Galleria.loadTheme("{{ "/assets/galleria/1.6.1/themes/azur/galleria.azur.min.js" | relative_url }}");
+                Galleria.run('.galleria', {
+                    transition: 'slide',
+                    imageCrop: false,
+                    autoplay: true,
+                    debug: false,
+                    swipe: true,
+                    lightbox: true
                 });
-            }
-        };
+            });
+        }
+    };
+</script>
+
+<script>
+    var getMeeting = function(year, month){
+        var date = new Date(year, month, 1, 0, 0, 0, 0);
+        date.setDate(14-date.getDay());
+        return date;
+    };
+
+    $(document).ready(function() {
+        var now = new Date();
+        var nextMeetingDate = getMeeting(now.getFullYear(), now.getMonth() + 1);
+        $('#next-meeting-date').text(moment(nextMeetingDate).format("dddd MMMM Do, YYYY"));
+    });
 </script>
 
 {% if site.google_analytics and jekyll.environment == 'production' %}
