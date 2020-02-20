@@ -30,10 +30,10 @@
       url: https://www.weather.gov/media/owlie/SGJune6-11(1).pdf
 - title: About Us
   sublinks:
-    - title: Repeater and 2-Meter Nets
-      url: /about/repeaternet
     - title: Club Meetings
       url: /about/meetings
+    - title: Repeater and 2-Meter Nets
+      url: /about/repeaternet
     - title: Become a ham!
       url: /about/testing
     - title: Contact Us
