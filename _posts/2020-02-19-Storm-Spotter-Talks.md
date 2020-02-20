@@ -5,7 +5,7 @@ date: '2020-02-19 21:21:46'
 tags: storm weather spotter training
 ---
 
-Spring is quickly approaching here in central Missouri and with it the likelyhood of storms and severe weather. One key tool extremely useful to the National Weather Service (NWS) and local communities are trained volunteer storm spotters. If you have a desire to become a spotter, are a current spotter and desire updated training, or are interested in weather in general, consider attending one of the many <a target="_blank" href="https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=4b68b0f227a346739061e78d94d09950">St. Louis NWS-sponsored 2020 Storm Spotter Talks</a>.
+Spring is quickly approaching here in central Missouri and with it the likelyhood of storms and severe weather. One key tool extremely useful to the National Weather Service (NWS) and local communities are trained volunteer storm spotters. If you have a desire to become a spotter, are a current spotter and require updated training, or are interested in weather in general, consider attending one of the many <a target="_blank" href="https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=4b68b0f227a346739061e78d94d09950">St. Louis NWS-sponsored 2020 Storm Spotter Talks</a>.
 
 Classes offered in central Missouri include (and not limited to) **as of Feb. 19, 2020** (please visit the <a target="_blank" href="https://noaa.maps.arcgis.com/apps/MapSeries/index.html?appid=4b68b0f227a346739061e78d94d09950">NWS site</a> for official/most up-to-date information):
 
