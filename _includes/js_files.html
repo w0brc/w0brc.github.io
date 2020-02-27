@@ -33,7 +33,7 @@
         return date;
     };
 
-    window.onload(function() {
+    $(document).ready(function() {
         var now = new Date();
         var nextMeetingDate = getMeeting(now.getFullYear(), now.getMonth() + 1);
         $('#next-meeting-date').text(moment(nextMeetingDate).format("dddd MMMM Do, YYYY"));
