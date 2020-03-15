@@ -3,7 +3,7 @@ title: 'Meeting Summary: March 14, 2020'
 author: W0MQD
 date: '2020-03-14 16:30:00'
 category: Summary
-tags: meeting hamfest repeater field-day
+tags: meeting hamfest covid-19 field-day
 ---
 
 The main topic for discussion for this month's meeting was the [hamfest next weekend on Saturday, March 21st](/hamfests/2020). While as of now the hamfest is still to be held, concerns over COVID-19 have the club monitoring the situation closely. Any updates will be given via [our Facebook page](https://www.facebook.com/BoonvilleAmateurRadioClub) and [here on the website](/). For now, club members are asked to help set up in the evening on Friday, March 20th, and/or to assist with various hamfest activities the next day.
