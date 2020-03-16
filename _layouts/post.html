@@ -23,7 +23,7 @@ layout: default
             <div id="post-title">
                 <h1>{{ page.title }}</h1>
             </div>
-            <p>Posted: {{ page.date | date: "%b %-d, %Y" }}
+            <p>Posted: {{ page.date | date: "%b %-d, %Y @ %H:%M" }}
             {% if page.author %}
             • Author(s): {{ page.author }}
             {% endif %}
