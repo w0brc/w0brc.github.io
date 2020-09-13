@@ -12,4 +12,4 @@ Field Day 2020 is also approaching, so the club discussed possible locations for
 
 The next club meeting is scheduled for [Saturday, April 11, 2020](/about/meetings#meetings).
 
-73s
+73

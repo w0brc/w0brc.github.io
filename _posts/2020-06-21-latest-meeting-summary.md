@@ -16,4 +16,4 @@ Finally, work is being done to perform some maintenance on the club's [repeater]
 
 Please mark your calendars and join us at our next meeting on Saturday, July 11, 2020. Location to be determined.
 
-73s
+73

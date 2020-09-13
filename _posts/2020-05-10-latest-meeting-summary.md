@@ -12,4 +12,4 @@ We have also added the [club's consitution and by-laws](/about/constitution) to 
 
 The next club meeting is scheduled for [Saturday, June 13, 2020](/about/meetings#meetings).
 
-73s
+73

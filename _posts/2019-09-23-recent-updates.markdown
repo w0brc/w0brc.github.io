@@ -9,4 +9,4 @@ It's been over a week since we started the website and several updates have been
 
 If you have any content suggestions, recommendations, or requests please feel free to hop onto the club's [repeater](/about/repeaternet#repeater-info) and discuss with other club members. We welcome all suggestions and hope to continue building a site helpful to all amateurs in the area.
 
-73s
+73

@@ -9,4 +9,4 @@ While the [2020 Hamfest](/hamfests/2020) is only a few months away, we have been
 
 If you would like to see any specific topics covered, please feel free to [reach out](/about/contact) to us with your suggestions and we will pass along your comments.
 
-73s
+73

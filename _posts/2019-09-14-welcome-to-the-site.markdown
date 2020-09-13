@@ -9,4 +9,4 @@ Welcome everyone to the new website for the W0BRC Boonville Amateur Radio Club! 
 
 Thanks again for visiting our site, and we look forward to providing a service to the area!
 
-73s
+73

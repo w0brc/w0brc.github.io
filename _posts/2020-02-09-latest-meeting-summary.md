@@ -21,4 +21,4 @@ Lastly, it has been decided when club meetings are postponed due to weather or o
 
 The next club meeting is scheduled for [Saturday, March 14, 2020](/about/meetings#meetings).
 
-73s
+73
