@@ -12,8 +12,8 @@ git_address: https://github.com/w0brc
 git_edit_address: https://github.com/w0brc/club-website/blob/gh-pages
 
 # Google Analytics
-google_analytics: UA-149570219-1
-google_search: 007440139204131590983:lauwg0571r9
+#google_analytics: UA-149570219-1
+#google_search: 007440139204131590983:lauwg0571r9
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
