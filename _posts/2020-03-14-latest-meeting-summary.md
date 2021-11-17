@@ -6,7 +6,7 @@ category: Summary
 tags: meeting hamfest covid-19 field-day
 ---
 
-The main topic for discussion for this month's meeting was the [hamfest next weekend on Saturday, March 21st](/hamfests/2020). While as of now the hamfest is still to be held, concerns over COVID-19 have the club monitoring the situation closely. Any updates will be given via [our Facebook page](https://www.facebook.com/BoonvilleAmateurRadioClub) and [here on the website](/). For now, club members are asked to help set up in the evening on Friday, March 20th, and/or to assist with various hamfest activities the next day.
+The main topic for discussion for this month's meeting was the [hamfest next weekend on Saturday, March 21st](/hamfests/archive/2020). While as of now the hamfest is still to be held, concerns over COVID-19 have the club monitoring the situation closely. Any updates will be given via [our Facebook page](https://www.facebook.com/BoonvilleAmateurRadioClub) and [here on the website](/). For now, club members are asked to help set up in the evening on Friday, March 20th, and/or to assist with various hamfest activities the next day.
 
 Field Day 2020 is also approaching, so the club discussed possible locations for this year with several possibilities for operating modes. This is an ongoing topic for future meetings.
 
