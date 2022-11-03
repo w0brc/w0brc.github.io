@@ -29,7 +29,12 @@
 <script>
     var getMeeting = function(year, month){
         var date = new Date(year, month, 1, 0, 0, 0, 0);
-        date.setDate(14-date.getDay());
+        if (month == 10) {
+            date.setDate(7-date.getDay());
+	}
+        else {
+            date.setDate(14-date.getDay());
+        }
         return date;
     };
 
