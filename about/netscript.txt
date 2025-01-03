@@ -1,6 +1,6 @@
 *** This is a suggested script, covering the necessary items, but if you wish to tailor it to your needs, feel free. ***
 
-This is _______. I am tonight’s NCS (Net control station) for the Boonville Amateur Radio Club 2 meter net. This Net is held weekly on Thursdays at 8:30PM right here on the W0BRC Boonville Amateur Radio Club repeater.
+This is _______. I am tonight’s NCS (Net control station) for the Boonville Amateur Radio Club 2 meter net. This Net is held weekly on Thursdays at 7 PM right here on the W0BRC Boonville Amateur Radio Club repeater.
 
 The purpose of this Net is to:
 
